@@ -2,6 +2,7 @@ import pandas as pd
 import csv
 from pprint import pprint
 
+FNAME = '_encar_new.csv'
 names = [
     'ts',
     'transmission',
@@ -21,7 +22,7 @@ names = [
     'desc2',
 ]
 
-df = pd.read_csv('_encar_new.csv', header=None, names=names, index_col=False)
+df = pd.read_csv(FNAME, header=None, names=names, index_col=False)
 
 def strip_col(val) -> str:
     if type(val) == str:
