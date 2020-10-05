@@ -2,7 +2,7 @@ import pandas as pd
 import csv
 from pprint import pprint
 
-FNAME = '_encar_new.csv'
+FNAME = 'encar_new.csv'
 names = [
     'ts',
     'transmission',
